@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import SchoolIcon from "@mui/icons-material/School";
+import ComputerIcon from "@mui/icons-material/Computer";
+import OfflineBoltIcon from "@mui/icons-material/OfflineBolt";
+import "./Home.css"
 
 const Home = () => {
   return (
@@ -27,11 +30,27 @@ const Home = () => {
         <br />
         <br />
         <Icons>
-          <SchoolIcon style={{ fontSize: 100 }} />
-          <p>
-            Öğrencinin güçlü ve zayıf yönlerini belirler, öğrenciye özel
-            rehberlik sunar.
-          </p>
+          <Icon>
+            <SchoolIcon style={{ fontSize: 100 }} />
+            <p>
+              Öğrencinin güçlü ve zayıf yönlerini belirler, öğrenciye özel
+              rehberlik sunar.
+            </p>
+          </Icon>
+          <Icon1>
+            <ComputerIcon style={{ fontSize: 100 }} />
+            <p>
+              Yenilikçi yapay zeka teknolojisini kullanarak eğitimde bir devrim
+              yaratır.
+            </p>
+          </Icon1>
+          <Icon2>
+            <OfflineBoltIcon style={{ fontSize: 100 }} />
+            <p>
+              Otomatik olarak öğrenci performansını izler ve gelişimi raporlar,
+              zaman ve emek tasarrufu sağlar.
+            </p>
+          </Icon2>
         </Icons>
       </About>
     </Container>
@@ -40,6 +59,7 @@ const Home = () => {
 
 const Container = styled.div`
   margin-top: 100px;
+  justify-content: space-between;
 `;
 
 const Header = styled.div``;
@@ -50,9 +70,20 @@ const About = styled.div``;
 
 const Icons = styled.div`
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  margin-left: 150px;
+  max-width: 50%;
+
+`;
+
+const Icon = styled.div`
+  display: column;
+`;
+
+const Icon1 = styled.div`
+  display: column;
+`;
+
+const Icon2 = styled.div`
+  display: column;
 `;
 
 export default Home;
