@@ -18,7 +18,6 @@ const Home = () => {
           <br />
         </Section>
         <About>
-          <h3>Hakkımızda</h3>
           <p>
             Eğitim teknolojileri pazarı, hızla büyüyen bir sektör haline
             gelmiştir ve bu alanda MENTORAS öncü bir konumdadır. Gelişmiş yapay
@@ -56,13 +55,72 @@ const Home = () => {
       </Fade>
       <Fade bottom>
         <SSS>
-          <h2>SSS - SIKÇA SORULAN SORULAR</h2>
+          <h1>SSS - SIKÇA SORULAN SORULAR</h1>
           <br />
           <br />
-          <h4>Mentoras.ai nedir?</h4>
-          <FAQ1>
-            <p></p>
-          </FAQ1>
+          <h2>Mentoras Technology nedir ve ne tür hizmetler sunuyorsunuz?</h2>
+          <p>
+            Mentoras Technology, teknolojik çalışmalar yürüten bir şirkettir.
+            Yazılım geliştirme, yapay zeka, veri bilimi, mobil uygulama
+            geliştirme ve diğer teknoloji odaklı çözümlerle müşterilerimize
+            hizmet vermekteyiz.
+          </p>
+          <br />
+          <br />
+          <h2>
+            Hangi teknolojilerde uzmanlaşıyorsunuz ve hangi endüstrilere hizmet
+            veriyorsunuz?
+          </h2>
+          <p>
+            Uzmanlık alanlarımız arasında yazılım geliştirme, yapay zeka, veri
+            bilimi, bulut bilişim, mobil uygulama geliştirme bulunmaktadır.
+            Çeşitli endüstrilere, özellikle eğitim gibi sektörlere hizmet
+            sunmaktayız.
+          </p>
+          <br />
+          <br />
+          <h2>Mentoras Technology ile nasıl iletişim kurabilirim?</h2>
+          <p>
+            Bizimle iletişime geçmek için iletişim sayfamızdaki formu
+            doldurabilir veya doğrudan e-posta yoluyla bize ulaşabilirsiniz:
+            mentorasai@gmail.com
+          </p>
+          <br />
+          <br />
+          <h2>
+            Projelerinizde hangi yaklaşımı benimsiyorsunuz ve müşteri
+            memnuniyeti için nasıl bir strateji izliyorsunuz?
+          </h2>
+          <p>
+            Projelerimizde genellikle bir ekip yaklaşımını benimseriz.
+            Müşterilerimizle yakın işbirliği yapar, ihtiyaçlarını anlarız ve
+            onlara özelleştirilmiş çözümler sunarız. Müşteri memnuniyetini
+            sağlamak için ise proje sürecinin her aşamasında şeffaf iletişim ve
+            düzenli geri bildirimler sağlarız.
+          </p>
+          <br />
+          <br />
+          <h2>
+            Mentoras Technology'de çalışan uzmanlar kimlerdir ve hangi alanlarda
+            uzmanlık sahibidirler?
+          </h2>
+          <p>
+            Ekip üyelerimiz, sektörün önde gelen uzmanlarıdır ve çeşitli
+            teknoloji alanlarında uzmanlaşmışlardır. Her biri geniş deneyime ve
+            birçok başarılı projeye sahiptir. Detaylı bilgi için "Ekibimiz"
+            sayfasına göz atabilirsiniz.
+          </p>
+          <br />
+          <br />
+          <h2>
+            Referanslarınız veya önceki projeleriniz hakkında daha fazla bilgi
+            alabilir miyim?
+          </h2>
+          <p>
+            Referanslarımız ve önceki projelerimiz hakkında daha fazla bilgi
+            almak için lütfen bizimle iletişime geçin. Size en uygun
+            referansları paylaşmaktan memnuniyet duyarız.
+          </p>
         </SSS>
       </Fade>
     </Container>
@@ -116,8 +174,12 @@ const Icon1 = styled.div`
 
 const SSS = styled.div`
   margin-top: 200px;
+
+  h2 {
+    font-weight: 500;
+  }
 `;
 
-const FAQ1 = styled.div``
+const Mentoras = styled.div``;
 
 export default Home;

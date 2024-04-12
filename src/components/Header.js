@@ -1,16 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <Container>
       <Logo src="/images/2.svg" alt="logo"></Logo>
-      <Link to="/login">
-        <Giris>
-          <p>Giriş Yap</p>
-        </Giris>
-      </Link>
+        <Login>Login</Login>
     </Container>
   );
 };
@@ -26,7 +21,7 @@ const Logo = styled.img`
   max-height: 75px;
 `;
 
-const Giris = styled.div`
+const Login = styled.div`
   background-color: white;
   display: flex;
   align-items: center;
@@ -48,3 +43,4 @@ const Giris = styled.div`
 `;
 
 export default Header;
+
